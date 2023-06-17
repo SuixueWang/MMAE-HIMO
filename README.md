@@ -1,6 +1,6 @@
-### HIMOP: Histopathological Image and Multi-omics Pre-training for Hepatocellular Carcinoma Survival Prediction
+### MMAE-HIMO: A Multimodal Masked Autoencoder Fusing Histopathological Image and Multi-omics for Hepatocellular Carcinoma Survival Prediction
 
-This is a PyTorch implementation of the [HIMOP paper]() under Linux with GPU NVIDIA A100 80GB.
+This is a PyTorch implementation of the [MMAE-HIMO paper]() under Linux with GPU NVIDIA A100 80GB.
 
 ### Requirements
 - pytorch 1.8.0+cu111
@@ -14,15 +14,14 @@ This is a PyTorch implementation of the [HIMOP paper]() under Linux with GPU NVI
 
 
 ### Run
+Download the whole slide images first, and then move the images to the path './dataset/'. 
 
 1. Pre-training
-
-Download the whole slide images first, and then move the images to the path './dataset/'. 
 ```angular2htm
-  CUDA_VISIBLE_DEVICES=1 python3 main_pretrain.py
+  CUDA_VISIBLE_DEVICES=0 python3 main_pretrain.py
 ```
 
 2. Survival prediction
 ```angular2html
-  CUDA_VISIBLE_DEVICES=1 python3 main_finetune.py
+  CUDA_VISIBLE_DEVICES=0 python3 main_finetune.py
 ```
