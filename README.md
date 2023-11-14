@@ -1,4 +1,5 @@
 # MMAE-HIMO: A Multimodal Masked Autoencoder Fusing Histopathological Image and Multi-omics for Hepatocellular Carcinoma Survival Prediction
+![image](https://github.com/SuixueWang/MMAE-HIMO/blob/master/MMAE-HIMO.png)
 
 This is a PyTorch implementation of the MMAE-HIMO paper under Linux with GPU NVIDIA A100 80GB.
 
